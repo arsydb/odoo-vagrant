@@ -27,9 +27,19 @@ Start the vagrant
 vagrant up
 ```
 
-## Notes
+Once the Odoo installation is finished, enter the virtual machine
 
-Once the Odoo installation is finished odoo will run by default on 8069 port
+```
+vagrant ssh
+```
+
+## Run
+
+```
+~/odoo-dev/odoo/odoo-bin
+```
+
+Odoo will run by default on 8069 port
 
 ```
 http://localhost:8069
@@ -37,19 +47,7 @@ http://localhost:8069
 
 You will see Odoo database manager, create your first database to get started.
 
-Below is the Standard Odoo installation details:
+## pgadmin user
 
-* Service Name : odoo-server
-* Default Port : 8069
-* PostgreSQL User : odoo
-* Code Location : /odoo
-* Default Addons Location : /odoo/odoo-server/addons
-* Custom Addons Directory : /odoo/custom/addons
-
-## Services
-
-You can start stop and reload odoo service using below command.
-
-* Start Odoo service : sudo service odoo-server start
-* Stop Odoo service : sudo service odoo-server stop
-* Restart Odoo service : sudo service odoo-server restart
+* user: admin
+* pass: admin
